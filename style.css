@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* LEVÁ STRANA */
+.left-column {
+    background-color: #780000; /* Ta tmavě červená z PDF */
+    color: white;
+    width: 35%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-name h1 { font-size: 40px; margin: 0; }
+.main-name p { font-size: 18px; margin: 20px 0 40px 0; line-height: 1.4; }
+
+.info-group { margin-bottom: 30px; }
+.info-group h3 { border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 5px; margin-bottom: 10px; }
+.info-group ul { list-style: none; padding: 0; margin: 0; }
+.info-group li { margin-bottom: 8px; font-size: 16px; }
+
+/* PRAVÁ STRANA */
+.right-column {
+    width: 65%;
+    padding: 40px;
+    background-color: white;
+}
+
+.right-column h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.job { text-align: center; } /* Centrování textu zkušeností jako v PDF */
+.job h3 { margin: 0; font-size: 22px; }
+.job .date { display: block; font-weight: bold; font-size: 14px; margin: 5px 0; }
+.job strong { font-size: 18px; }
+.job p { margin: 5px 0; color: #333; }
+
+/* TLAČÍTKO GITHUB */
+.github-link {
+    margin-top: auto; /* Přenese tlačítko úplně dolů v červeném pruhu */
+    text-decoration: none;
+}
+
+.github-link button {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.github-link button:hover {
+    background-color: #ddd;
+}
